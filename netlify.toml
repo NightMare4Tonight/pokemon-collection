@@ -1,8 +1,7 @@
 [build]
-    command = "npm run build"
-    commandOrigin = "config"
-    enviroment = "-CI"
-    publish = "/opt/build/repo/build"
-    publishOrigin = "config"
+    command = "CI= npm run build"
+    publish = "build/"
+    functions = "functions/"
+    
     
     
