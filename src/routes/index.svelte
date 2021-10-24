@@ -30,6 +30,7 @@
       filteredPokemon = [...pokemon]
     }
   }
+
 </script>
 
 <svelte:head>
@@ -43,10 +44,10 @@ type="text"
 placeholder="Search Pokemon"
 bind:value={searchTerm}>
 
-<div >
+<div class="text-center">
   <div class="grid gap-4 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
     {#each filteredPokemon as pokeman}
-    <PokemanCard pokeman={pokeman}/>
+      <PokemanCard pokeman={pokeman}/>
     {/each}
   </div>
 </div>
